@@ -1,0 +1,72 @@
+@media only screen and (min-width: 1044px) {
+
+
+	
+}
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1043px) {
+.banner_img_height {
+	max-height: auto;
+    overflow: visible;
+	}
+.banner_img_height2 {
+    max-height: auto;
+}
+
+
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+.banner_img_height {
+	max-height: auto;
+    overflow: visible;
+	}
+.banner_img_height2 {
+    max-height: auto;
+}
+
+
+}
+
+
+
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+.banner_img_height {
+	max-height: auto;
+    overflow: visible;
+	}
+.banner_img_height2 {
+    max-height: auto;
+}
+	
+}
+
+
+
+@media only screen and (min-width: 480px) and (max-width: 599px) {
+	
+.banner_img_height {
+	max-height: auto;
+    overflow: visible;
+	}
+.banner_img_height2 {
+    max-height: auto;
+}	
+
+}
+
+
+
+@media only screen and (max-width: 479px) {
+
+.banner_img_height {
+	max-height: auto;
+    overflow: visible;
+	}
+.banner_img_height2 {
+    max-height: auto;
+}	
+
+}

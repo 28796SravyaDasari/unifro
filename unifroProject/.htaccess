@@ -1,0 +1,72 @@
+FileETag MTime Size
+
+RewriteEngine On
+
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteRule (.*) /404/url_rewrite.php
+
+DirectoryIndex index.html index.php
+
+# secure htaccess file
+<Files .htaccess>
+order allow,deny
+deny from all
+</Files>
+
+<Files 403.shtml>
+order allow,deny
+allow from all
+</Files>
+
+<files php.ini>  
+order deny,allow  
+deny from all
+</files>
+
+#Enable browser caching for faster page loading
+<Files *.js>
+Header add "Cache-Control" "max-age=604800"
+</Files>
+
+<Files *.jpg>
+Header add "Cache-Control" "max-age=604800"
+</Files>
+
+<Files *.jpeg>
+Header add "Cache-Control" "max-age=604800"
+</Files>
+
+<Files *.JPEG>
+Header add "Cache-Control" "max-age=604800"
+</Files>
+
+<Files *.JPG>
+Header add "Cache-Control" "max-age=604800"
+</Files>
+
+<Files *.png>
+Header add "Cache-Control" "max-age=604800"
+</Files>
+
+<Files *.gif>
+Header add "Cache-Control" "max-age=604800"
+</Files>
+
+<Files *.css>
+Header add "Cache-Control" "max-age=604800"
+</Files>
+
+<Files *.ico>
+Header add "Cache-Control" "max-age=604800"
+</Files>
+
+<Files *.swf>
+Header add "Cache-Control" "max-age=604800"
+</Files>
+
+<Files *.html>
+Header add "Cache-Control" "max-age=604800"
+</Files>
+
+Options All -Indexes
